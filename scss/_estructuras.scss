@@ -1,0 +1,34 @@
+*{
+    margin:0;
+    padding:0;
+}
+header, footer{
+    padding: 5px;
+}
+
+nav {
+    margin-top: 50px;
+    background-color: $color2;
+    ul {
+        justify-content: center;
+    }
+}
+
+footer{
+    background-color: $color_primario;
+    position: relative;
+    width: 100%;
+    bottom: 0px;
+    p{
+        padding-right: 50px;
+    }
+}
+
+main{
+    padding: 20px;
+    .carta {
+        margin-right: 250px;
+        margin-left: 250px;
+        margin-top: 5px;
+    }
+}

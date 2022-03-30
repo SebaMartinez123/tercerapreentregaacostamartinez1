@@ -1,0 +1,208 @@
+@import "colores";
+@import "estructuras";
+@import "tipografia";
+
+
+
+ul {
+    list-style: none;
+    li {
+        padding: 10px;
+        display: inline-block;
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 25px;
+            &:hover {
+                color: $color_3;
+            }
+        }
+    }
+}
+.centrado {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.centrado2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 900;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: $color2 ;
+}
+
+.tarjetas {
+    margin: 50px;
+    div {
+        background-color:$color2;
+        border-radius: 2rem;
+        .card-footer {
+            border-radius: 2rem;
+            background-color: paleturquoise;
+        }
+    }
+}
+
+img {
+    border-radius: 5rem;
+}
+
+.contenedor1 {
+    h2 {
+        font-size: 100px;
+        text-align: center;
+        font-weight: 100;
+        img {
+            margin: 15px;
+        }
+    }
+}
+
+/*sass2*/ 
+
+$ancho: 600px;
+$gray: lightgray;
+$lightblue: lightblue;
+$espaciado: 4px;
+$espaciado2: 8px;
+$blanco: white;
+$negro: black;
+
+.box_uno {
+    color: $negro;
+    background-color: $lightblue;
+    width: $ancho/2;
+    padding: $espaciado2+$espaciado;
+    text-align: center;
+}
+
+.box_dos {
+    $espaciado2: 10px;
+    background-color: $gray;
+    width: ($ancho/2)-100;
+    padding: ($espaciado*2) + $espaciado2;
+}
+
+$indicador: 50;
+$type: casa;
+.sassdos{
+    @if $type == perro {
+        color: blue;
+    } @else if $type == gato {
+        color: red;
+    } @else if $type == casa {
+        color: lightblue;
+    } @else {
+        color: black
+    }
+}
+
+.sassdos {
+    @if $indicador > 20 {
+        background-color: gray;
+    } @else if $indicador < 50 {
+        background-color: teal;
+    } @else if $indicador < 10 {
+        background-color: purple;
+    } @else {
+        background-color: black;
+    }
+}
+
+/*maps*/
+
+$redes: (twitter: #55acee, facebook: #3a5795,
+sendmail: #c25e30);
+$colores:(color1: #333333, color2: #c71e1e,
+color3: #027c10);
+
+@each $clave, $valor in $redes {
+    .btn-#{$clave} {
+        background-color: $valor;
+    }
+}
+
+@each $clave2, $valor2 in $colores {
+    .#{$clave2} {
+        color: $valor2;
+    }
+    
+}
+
+$estilos: (
+    color: green,
+    centro: center,
+    fuente: 24px
+);
+
+.estilos4 {
+    color: map-get($estilos, color);
+    text-align: map-get($estilos, centro);
+    font-size: map-get($estilos, fuente);
+}
+
+/*extend*/
+
+.ext1 {
+    border: 1px solid #555555;
+    background-color: #abebf0;
+    padding: 20px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.ext2 {
+    @extend .ext1;
+    border-width: 3px;
+    font-size: 15px;
+}
+
+.box1 {
+    color: #004f45;
+    background-color: #519e90;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.borde {
+    border: 2px dotted #333333;
+}
+
+.decoracion {
+    @extend .box1;
+    @extend .borde;
+    word-spacing: 4px;
+    letter-spacing: 3px;
+}
+
+/*MIXINS*/ 
+
+.ejemplo1, .ejemplo2 {
+    color: #1613b8;
+    background-color: #abebf0;
+    font-size: 20px;
+}
+
+@mixin sizes ($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+.espacio {
+    @extend .ejemplo1;
+    padding: $espaciado;
+}
+
+.caja {
+    @extend .espacio;
+    @include sizes (780px, 100px);
+
+}

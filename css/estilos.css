@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+header, footer {
+  padding: 5px; }
+
+nav {
+  margin-top: 50px;
+  background-color: #c0dae2; }
+  nav ul {
+    justify-content: center; }
+
+footer {
+  background-color: rgba(18, 150, 148, 0.926);
+  position: relative;
+  width: 100%;
+  bottom: 0px; }
+  footer p {
+    padding-right: 50px; }
+
+main {
+  padding: 20px; }
+  main .carta {
+    margin-right: 250px;
+    margin-left: 250px;
+    margin-top: 5px; }
+
+body {
+  font-family: 'Roboto', sans-serif; }
+
+ul {
+  list-style: none; }
+  ul li {
+    padding: 10px;
+    display: inline-block; }
+    ul li a {
+      text-decoration: none;
+      color: black;
+      font-size: 25px; }
+      ul li a:hover {
+        color: #338880; }
+
+.centrado {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.centrado2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end; }
+
+h1 {
+  font-size: 30px;
+  font-weight: 900;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #c0dae2; }
+
+.tarjetas {
+  margin: 50px; }
+  .tarjetas div {
+    background-color: #c0dae2;
+    border-radius: 2rem; }
+    .tarjetas div .card-footer {
+      border-radius: 2rem;
+      background-color: paleturquoise; }
+
+img {
+  border-radius: 5rem; }
+
+.contenedor1 h2 {
+  font-size: 100px;
+  text-align: center;
+  font-weight: 100; }
+  .contenedor1 h2 img {
+    margin: 15px; }
+
+/*sass2*/
+.box_uno {
+  color: black;
+  background-color: lightblue;
+  width: 300px;
+  padding: 12px;
+  text-align: center; }
+
+.box_dos {
+  background-color: lightgray;
+  width: 200px;
+  padding: 18px; }
+
+.sassdos {
+  color: lightblue; }
+
+.sassdos {
+  background-color: gray; }
+
+/*maps*/
+.btn-twitter {
+  background-color: #55acee; }
+
+.btn-facebook {
+  background-color: #3a5795; }
+
+.btn-sendmail {
+  background-color: #c25e30; }
+
+.color1 {
+  color: #333333; }
+
+.color2 {
+  color: #c71e1e; }
+
+.color3 {
+  color: #027c10; }
+
+.estilos4 {
+  color: green;
+  text-align: center;
+  font-size: 24px; }
+
+/*extend*/
+.ext1, .ext2 {
+  border: 1px solid #555555;
+  background-color: #abebf0;
+  padding: 20px;
+  font-size: 22px;
+  font-weight: bold; }
+
+.ext2 {
+  border-width: 3px;
+  font-size: 15px; }
+
+.box1, .decoracion {
+  color: #004f45;
+  background-color: #519e90;
+  padding: 10px;
+  text-transform: uppercase; }
+
+.borde, .decoracion {
+  border: 2px dotted #333333; }
+
+.decoracion {
+  word-spacing: 4px;
+  letter-spacing: 3px; }
+
+/*MIXINS*/
+.ejemplo1, .espacio, .caja, .ejemplo2 {
+  color: #1613b8;
+  background-color: #abebf0;
+  font-size: 20px; }
+
+.espacio, .caja {
+  padding: 4px; }
+
+.caja {
+  width: 780px;
+  height: 100px; }
