@@ -2,22 +2,18 @@
   margin: 0;
   padding: 0; }
 
-header, footer {
-  padding: 5px; }
+header {
+  padding: 1px; }
 
 nav {
-  margin-top: 50px;
+  margin-top: 5px;
   background-color: #c0dae2; }
   nav ul {
     justify-content: center; }
 
 footer {
   background-color: rgba(18, 150, 148, 0.926);
-  position: relative;
-  width: 100%;
-  bottom: 0px; }
-  footer p {
-    padding-right: 50px; }
+  font-size: small; }
 
 main {
   padding: 20px; }
@@ -29,16 +25,16 @@ main {
 body {
   font-family: 'Roboto', sans-serif; }
 
-ul {
+nav ul {
   list-style: none; }
-  ul li {
+  nav ul li {
     padding: 10px;
     display: inline-block; }
-    ul li a {
+    nav ul li a {
       text-decoration: none;
       color: black;
       font-size: 25px; }
-      ul li a:hover {
+      nav ul li a:hover {
         color: #338880; }
 
 .centrado {
@@ -52,11 +48,12 @@ ul {
   justify-content: flex-end; }
 
 h1 {
-  font-size: 30px;
+  font-size: 50px;
   font-weight: 900;
   border-radius: 10px;
-  border-style: solid;
-  border-color: #c0dae2; }
+  border-style: solid 2px;
+  border-color: #c0dae2;
+  padding: 2px; }
 
 .tarjetas {
   margin: 50px; }
@@ -77,6 +74,17 @@ img {
   .contenedor1 h2 img {
     margin: 15px; }
 
+footer ul {
+  list-style: none; }
+  footer ul li {
+    padding: 5px; }
+    footer ul li a {
+      text-decoration: none;
+      color: black;
+      font-size: medium; }
+      footer ul li a:hover {
+        color: #338880; }
+
 /*sass2*/
 .box_uno {
   color: black;
@@ -91,20 +99,20 @@ img {
   padding: 18px; }
 
 .sassdos {
-  color: lightblue; }
+  color: gray; }
 
 .sassdos {
-  background-color: gray; }
+  background-color: lightgray; }
 
 /*maps*/
 .btn-twitter {
-  background-color: #55acee; }
+  background-color: #1d899d; }
 
 .btn-facebook {
-  background-color: #3a5795; }
+  background-color: #37eeeb; }
 
 .btn-sendmail {
-  background-color: #c25e30; }
+  background-color: #9bdfe8; }
 
 .color1 {
   color: #333333; }
@@ -134,7 +142,7 @@ img {
 
 .box1, .decoracion {
   color: #004f45;
-  background-color: #519e90;
+  background-color: #91c5c9;
   padding: 10px;
   text-transform: uppercase; }
 

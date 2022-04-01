@@ -4,6 +4,7 @@
 
 
 
+nav{
 ul {
     list-style: none;
     li {
@@ -19,6 +20,7 @@ ul {
         }
     }
 }
+}
 .centrado {
     display: flex;
     flex-direction: row;
@@ -32,11 +34,12 @@ ul {
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 50px;
     font-weight: 900;
     border-radius: 10px;
-    border-style: solid;
+    border-style: solid 2px;
     border-color: $color2 ;
+    padding: 2px;
 }
 
 .tarjetas {
@@ -66,6 +69,23 @@ img {
     }
 }
 
+footer{
+    ul {    
+        list-style: none;
+        li {
+            padding: 5px;
+            a {
+                text-decoration: none;
+                color: black;
+                font-size: medium;
+                &:hover {
+                    color: $color_3;
+                }
+            }
+        }
+    }
+}
+
 /*sass2*/ 
 
 $ancho: 600px;
@@ -91,11 +111,11 @@ $negro: black;
     padding: ($espaciado*2) + $espaciado2;
 }
 
-$indicador: 50;
-$type: casa;
+$indicador: 60;
+$type: perro;
 .sassdos{
     @if $type == perro {
-        color: blue;
+        color: gray;
     } @else if $type == gato {
         color: red;
     } @else if $type == casa {
@@ -107,7 +127,7 @@ $type: casa;
 
 .sassdos {
     @if $indicador > 20 {
-        background-color: gray;
+        background-color: lightgray;
     } @else if $indicador < 50 {
         background-color: teal;
     } @else if $indicador < 10 {
@@ -119,8 +139,8 @@ $type: casa;
 
 /*maps*/
 
-$redes: (twitter: #55acee, facebook: #3a5795,
-sendmail: #c25e30);
+$redes: (twitter: #1d899d, facebook: #37eeeb,
+sendmail: #9bdfe8);
 $colores:(color1: #333333, color2: #c71e1e,
 color3: #027c10);
 
@@ -167,7 +187,7 @@ $estilos: (
 
 .box1 {
     color: #004f45;
-    background-color: #519e90;
+    background-color: #91c5c9;
     padding: 10px;
     text-transform: uppercase;
 }
